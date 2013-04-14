@@ -49,6 +49,7 @@ function VariantOptions(params) {
     enable(parent.find('a.option-value'));
     toggle();
     $('.clear-option a.clear-button').hide().click(handle_clear);
+    $('#product-variants .variant-options').find("ul.variant-option-values li a.in-stock:first").click();
 
     if (default_instock) {
       divs.each(function(){
